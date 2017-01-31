@@ -106,13 +106,19 @@
     <DebugType>none</DebugType>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Moq, Version=4.2.1507.118, Culture=neutral, PublicKeyToken=69f491c39445e920">
-      <HintPath>..\packages\Moq.4.2.1507.0118\lib\net40\Moq.dll</HintPath>
+    <Reference Include="Castle.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.3.3.3\lib\net45\Castle.Core.dll</HintPath>
+      <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+    <Reference Include="Moq, Version=4.5.10.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <HintPath>..\packages\Moq.4.5.10\lib\net45\Moq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.4.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.4.0\lib\net45\nunit.framework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -153,6 +159,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Tests\Common\ArrayFields.cs" />
+    <Compile Include="Tests\Common\AsyncEnumerator.cs" />
     <Compile Include="Tests\Common\ChineseSupport.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -372,6 +379,7 @@
     <Compile Include="Types\Customers\CustomersVerticalBar.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Types\Customers\CustomersVerticalBarWithFieldCaption.cs" />
     <Compile Include="Types\Orders\OrdersFixed.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -424,7 +432,6 @@
     <Compile Include="..\FileHelpers\VersionInfo.cs">
       <Link>VersionInfo.cs</Link>
     </Compile>
-    <Compile Include="Data\FluentCode.cs" />
     <Compile Include="Data\FileTestBase.cs" />
     <Compile Include="Tests\Common\Autoproperties.cs" />
     <Compile Include="Tests\Common\SorterTests.cs" />
@@ -599,6 +606,7 @@
     <Content Include="Data\Good\ReadAsDataTable.txt" />
     <Content Include="Data\Good\RealCsvComma1.txt" />
     <Content Include="Data\Good\RealCsvComma2.txt" />
+    <Content Include="Data\Good\RealCsvCommaBlankLines1.txt" />
     <Content Include="Data\Good\RealCsvTab1.txt" />
     <Content Include="Data\Good\RealCsvTab2.txt" />
     <Content Include="Data\Good\RealCsvVerticalBar1.txt" />

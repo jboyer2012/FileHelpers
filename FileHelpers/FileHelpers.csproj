@@ -106,6 +106,7 @@
     <Compile Include="Attributes\FieldAttribute.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Attributes\FieldCaptionAttribute.cs" />
     <Compile Include="Attributes\FieldHiddenAttribute.cs" />
     <Compile Include="Attributes\FieldNotEmptyAttribute.cs" />
     <Compile Include="Attributes\FieldValueDiscardedAttribute.cs" />
@@ -390,7 +391,6 @@
     <Compile Include="Streams\StreamInfoProvider.cs" />
     <Compile Include="Streams\InternalStreamReader.cs" />
     <Compile Include="VersionInfo.cs" />
-    <None Include="Diagrams\EnginesDiagram.cd" />
     <None Include="Diagrams\EnginesDiagramCompact.cd" />
     <None Include="Diagrams\DynamicRecords.cd" />
     <None Include="FileHelpers.snk" />
